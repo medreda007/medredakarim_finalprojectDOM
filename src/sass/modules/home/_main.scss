@@ -79,3 +79,66 @@ body{
         height: 70%;
     }
 }
+.menu-btn{
+    &:hover{
+        cursor: pointer;
+        color: rgb(211, 21, 59)!important;
+    }
+    &:focus{
+        color: rgb(211, 21, 59) !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .navigation{
+        position: fixed !important;
+        top: 13vh !important;
+        right: -50vw !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center!important;
+        transition: ease-in 0.4s !important;
+        z-index: 999;
+        background: #fff;
+    }
+    .show-nav{
+        right: -110vw !important;
+    }
+}
+// ~~section4
+.sec4-menu-pics{
+    height: 35vh;
+    width: 17vw;
+}
+.menu-pic1{
+    background-image: url(../../../../public/images/menu/menu-item-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-pic2{
+    background-image: url(../../../../public/images/menu/menu-item-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-pic3{
+    background-image: url(../../../../public/images/menu/menu-item-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-pic4{
+    background-image: url(../../../../public/images/menu/menu-item-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-pic5{
+    background-image: url(../../../../public/images/menu/menu-item-5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-pic6{
+    background-image: url(../../../../public/images/menu/menu-item-6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
