@@ -1,0 +1,81 @@
+body{
+    height: 100vh;
+}
+// ~~ section1
+.first-section{
+    background-color: rgba(199, 199, 190, 0.202);
+    .first-section-part1{
+
+    }
+    img{
+        height: 100%;
+        padding-bottom: 8%;
+    }
+}
+
+// ~~ section2
+.second-section{
+    height: 80vh;
+    .second-section-part2{
+        height: 100%;
+        width: 100%;
+        // background: #000;
+    }
+    .second-section-img{
+        width: 45%;
+        background: #000;
+        background-image: url(../../../../public/images/about.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        div{
+            margin-bottom: 10%;
+            padding: 2%;
+        }
+    }
+    .second-section-text{
+        width: 45%;
+        height: 100%;
+        // background: #000;
+        .second-section-text-part1{
+            height: 50%;
+        }
+        .second-section-text-part2{
+            height: 50%;
+            width: 100%;
+            background-image: url(../../../../public/images/about-2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            button{
+                background-color: rgb(211, 21, 59);
+                border-radius: 50%;
+                height: 25%;
+                width: 11%;
+            }
+        }
+    }
+}
+
+// ~~ section3
+.third-section{
+    background: rgba(199, 199, 190, 0.202);
+    margin-top: 10%;
+    .third-section-box1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(211, 21, 59);
+        width: 25%;
+        height: 80%;
+    }
+    .third-section-box2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        width: 25%;
+        height: 70%;
+    }
+}
