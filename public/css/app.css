@@ -11939,24 +11939,6 @@ body {
   color: rgb(211, 21, 59) !important;
 }
 
-@media (max-width: 430px) {
-  .navigation {
-    position: fixed !important;
-    top: 13vh !important;
-    right: -50vw !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    transition: ease-in 0.4s !important;
-    z-index: 999;
-    background: #fff;
-  }
-  .show-nav {
-    right: -110vw !important;
-  }
-}
 .sec4-menu-pics {
   height: 35vh;
   width: 17vw;
@@ -12058,7 +12040,8 @@ body {
   top: 0;
   left: -5%;
   transform: translateX(-50%);
-  width: 4px; /* Adjust the width of the line as needed */
+  width: 4px;
+  /* Adjust the width of the line as needed */
   height: 100%;
   background-color: red;
 }
@@ -12176,6 +12159,211 @@ body {
 
 .section10 {
   height: 100vh;
+}
+.section10 .sec10-cards .sec10-card {
+  background: rgba(199, 199, 190, 0.202);
+  width: 42%;
+  padding-left: 2%;
+  padding-top: 1%;
+}
+.section10 .sec10-cards .sec10-card .sec10-icon {
+  display: flex;
+  justify-content: center;
+  background: rgb(211, 21, 59);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.section10 .contact-us-Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  width: 80%;
+  background: #fcfcfc;
+  box-shadow: 2px 5px 70px rgba(0, 0, 0, 0.2);
+  padding: 2vw;
+}
+.section10 .contact-us-Form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1vw;
+}
+.section10 .contact-us-Form form div {
+  display: flex;
+  gap: 1vw;
+}
+.section10 .contact-us-Form form div input {
+  width: 50%;
+  border: rgba(0, 0, 0, 0.189) solid 2px;
+}
+.section10 .contact-us-Form form input {
+  width: 100%;
+  padding: 1vh;
+  border: rgba(0, 0, 0, 0.189) solid 2px;
+}
+.section10 .contact-us-Form form textarea {
+  border: rgba(0, 0, 0, 0.189) solid 2px;
+}
+
+.sec4-bg-img {
+  background-image: url(../../../../public/images/stats-bg.jpg);
+  background-attachment: fixed;
+  height: 40vh;
+}
+.sec4-bg-img .stats {
+  position: relative;
+  z-index: 999;
+  color: #fff !important;
+}
+.sec4-bg-img .stats::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+@media (max-width: 430px) {
+  .navigation {
+    position: fixed !important;
+    top: 13vh !important;
+    right: -110vw !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    transition: ease-in 0.4s !important;
+    z-index: 999;
+    background: #fff;
+  }
+  .show-nav {
+    right: -50vw !important;
+  }
+  .nav-btn {
+    width: 100%;
+    margin-right: 10%;
+  }
+  .modal-btn {
+    width: 33vw !important;
+  }
+  .first-section {
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content !important;
+    background: rgba(199, 199, 190, 0.202);
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+  }
+  .first-section-part1 {
+    width: 100vw !important;
+  }
+  .first-section-part1 div {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .first-section-part1 .first-section-btns {
+    display: flex !important;
+    flex-direction: row;
+    width: 100vw !important;
+  }
+  .first-section-part1 .first-section-btns button {
+    width: 30%;
+  }
+  .first-section-part2 {
+    display: flex;
+    align-items: center;
+  }
+  .first-section-part2 img {
+    width: 100vw;
+    height: 90%;
+    margin-top: 5%;
+  }
+  .second-section {
+    height: fit-content;
+    padding-top: 8%;
+  }
+  .second-section-part2 {
+    height: fit-content !important;
+  }
+  .second-section-part2 > * {
+    width: 100vw !important;
+  }
+  .second-section-part2 .second-section-img {
+    height: 100vh;
+  }
+  .second-section-part2 .second-section-text-part2 {
+    height: 50vh !important;
+  }
+  .second-section-part2 .second-section-text-part2 button {
+    height: 70px !important;
+    width: 70px !important;
+  }
+  .third-section {
+    height: fit-content !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+  }
+  .third-section > * {
+    display: flex;
+    width: 90vw !important;
+    height: 60vh !important;
+    padding: 5%;
+    justify-content: center;
+  }
+  .third-section .third-section-box1 {
+    display: flex;
+    align-items: start;
+  }
+  .third-section .third-section-box1 div {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
+    margin-left: 5%;
+  }
+  .third-section .third-section-box1 div button {
+    width: 200px;
+  }
+  .sec4-bg-img {
+    height: 100vh !important;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column;
+    position: relative;
+    width: 100vw !important;
+  }
+  .sec4-bg-img::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+  .sec4-bg-img .stats {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center !important;
+    flex-direction: column;
+    font-size: 150%;
+  }
+  .sec4-bg-img .stats h1, .sec4-bg-img .stats .h1 {
+    font-size: 150% !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
