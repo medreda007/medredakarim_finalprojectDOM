@@ -12047,7 +12047,7 @@ body {
   width: 250px;
 }
 .fifth-section .rotated {
-  transform: scaleY(-1) !important;
+  transform: scaleX(-1) !important;
 }
 .fifth-section .vertical-line {
   position: relative;
@@ -12067,6 +12067,115 @@ body {
   height: 50vh;
   width: 75vw;
   padding: 5%;
+}
+
+.carousel-indicators button {
+  background-color: rgb(211, 21, 59) !important;
+  border-radius: 50% !important;
+  height: 10px !important;
+  width: 10px !important;
+}
+
+.carousel2-inner {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.carousel2-img1 {
+  background-image: url(../../../../public/images/events-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 68vh;
+  width: 25vw;
+}
+.carousel2-img1 div {
+  background-color: rgba(0, 0, 0, 0.4823529412);
+  padding: 5%;
+}
+
+.carousel2-img2 {
+  background-image: url(../../../../public/images/events-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 68vh;
+  width: 25vw;
+}
+.carousel2-img2 div {
+  background-color: rgba(0, 0, 0, 0.4823529412);
+  padding: 5%;
+}
+
+.carousel2-img3 {
+  background-image: url(../../../../public/images/events-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 68vh;
+  width: 25vw;
+}
+.carousel2-img3 div {
+  background-color: rgba(0, 0, 0, 0.4823529412);
+  padding: 5%;
+}
+
+.seventh-section {
+  background-color: rgba(199, 199, 190, 0.202);
+  height: fit-content;
+  padding-bottom: 4%;
+}
+.seventh-section .sec7-cards {
+  width: 100% !important;
+  padding-inline: 5%;
+  gap: 2vw;
+}
+.seventh-section .sec7-cards .card {
+  width: 28vw !important;
+}
+.seventh-section .sec7-cards .card .sec7-img-border {
+  position: relative;
+}
+.seventh-section .sec7-cards .card .sec7-img-border::before {
+  position: absolute;
+  content: "";
+  top: 80%;
+  left: 0%;
+  background-image: url(../../../../public/images/team-shape.svg);
+  background-repeat: no-repeat;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.099);
+  width: 100%;
+  height: 23%;
+}
+
+.eighth-section {
+  height: 90vh;
+}
+.eighth-section .sec8-img {
+  background-image: url(../../../../public/images/reservation.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 25%;
+}
+.eighth-section .sec8-part2 {
+  padding: 3% !important;
+  height: 78%;
+}
+.eighth-section .sec8-form {
+  width: 75%;
+  height: 100%;
+  background: rgba(199, 199, 190, 0.202);
+}
+.eighth-section .sec8-form .form-msg input {
+  padding-bottom: 12%;
+}
+
+.ninth-section {
+  height: 75vh;
+  background: rgba(199, 199, 190, 0.202);
+}
+
+.section10 {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=app.css.map */

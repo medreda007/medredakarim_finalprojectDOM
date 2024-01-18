@@ -20,3 +20,9 @@ logIn.addEventListener('click', () => {
     signInForm.classList.add("d-none")
     logInForm.classList.remove("d-none")
 })
+
+
+
+let carousel2Inner = document.querySelector(".carousel2-inner")
+let carousel2Imgs = document.querySelectorAll(".carousel2-imgs")
+
