@@ -1,6 +1,9 @@
 body{
     height: 100vh;
 }
+// ~~ modal
+
+
 // ~~ section1
 .first-section{
     background-color: rgba(199, 199, 190, 0.202);
@@ -141,4 +144,75 @@ body{
     background-image: url(../../../../public/images/menu/menu-item-6.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.fifth-section{
+    background: rgba(199, 199, 190, 0.202);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 80vh;
+    padding-bottom: 5%;
+    .carousel{
+        width: 75vw !important;
+    }
+    .review-pic1{
+        border: #fff solid 8px;
+        border-radius: 50%;
+        background-image: url(../../../../public/images/testimonials/testimonials-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        width: 250px;
+    }
+    .review-pic2{
+        border: #fff solid 8px;
+        border-radius: 50%;
+        background-image: url(../../../../public/images/testimonials/testimonials-2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        width: 250px;
+    }
+    .review-pic3{
+        border: #fff solid 8px;
+        border-radius: 50%;
+        background-image: url(../../../../public/images/testimonials/testimonials-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        width: 250px;
+    }
+    .review-pic4{
+        border: #fff solid 8px;
+        border-radius: 50%;
+        background-image: url(../../../../public/images/testimonials/testimonials-4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        width: 250px;
+    }
+    .rotated {
+        transform: scaleY(-1) !important;
+    }
+
+    .vertical-line {
+        position: relative;
+    }
+    .vertical-line::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -5%;
+        transform: translateX(-50%);
+        width: 4px; /* Adjust the width of the line as needed */
+        height: 100%;
+        background-color: red;
+    }
+}
+.carousel-item{
+    height: 50vh;
+    width: 75vw;
+    padding: 5%;
 }
