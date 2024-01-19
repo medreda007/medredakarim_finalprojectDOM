@@ -1,6 +1,7 @@
 let nav = document.querySelector('.navigation');
 let navBtn = document.querySelector(".nav-btn-toggler")
 navBtn.addEventListener('click', () => {
+    console.log("yguopioj");
     nav.classList.toggle("show-nav")
 })
 
@@ -26,3 +27,4 @@ logIn.addEventListener('click', () => {
 let carousel2Inner = document.querySelector(".carousel2-inner")
 let carousel2Imgs = document.querySelectorAll(".carousel2-imgs")
 
+let modalVideo = document.querySelector(".modal-video")

@@ -11860,12 +11860,26 @@ body {
   height: 100vh;
 }
 
+.nav-bar {
+  position: fixed;
+  z-index: 999 !important;
+}
+
 .first-section {
   background-color: rgba(199, 199, 190, 0.202);
 }
 .first-section img {
   height: 100%;
   padding-bottom: 8%;
+}
+
+.first-section-btns {
+  top: 60%;
+  left: 4%;
+}
+.first-section-btns button {
+  width: 10vw;
+  height: 45px;
 }
 
 .second-section {
@@ -11940,14 +11954,16 @@ body {
 }
 
 .sec4-menu-pics {
-  height: 35vh;
-  width: 17vw;
+  height: 37vh;
+  width: 18vw;
 }
 
 .menu-pic1 {
   background-image: url(../../../../public/images/menu/menu-item-1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 18rem;
+  padding: 20vh;
 }
 
 .menu-pic2 {
@@ -11986,7 +12002,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: end;
-  height: 80vh;
+  height: fit-content;
   padding-bottom: 5%;
 }
 .fifth-section .carousel {
@@ -12047,11 +12063,12 @@ body {
 }
 
 .carousel-item {
-  height: 50vh;
-  width: 75vw;
-  padding: 5%;
+  padding: 10%;
 }
 
+.carousel-indicators {
+  margin: -1%;
+}
 .carousel-indicators button {
   background-color: rgb(211, 21, 59) !important;
   border-radius: 50% !important;
@@ -12107,12 +12124,13 @@ body {
   padding-bottom: 4%;
 }
 .seventh-section .sec7-cards {
-  width: 100% !important;
   padding-inline: 5%;
   gap: 2vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 .seventh-section .sec7-cards .card {
-  width: 28vw !important;
+  width: 100%;
 }
 .seventh-section .sec7-cards .card .sec7-img-border {
   position: relative;
@@ -12130,18 +12148,17 @@ body {
 }
 
 .eighth-section {
-  height: 90vh;
+  height: fit-content;
 }
 .eighth-section .sec8-img {
   background-image: url(../../../../public/images/reservation.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  height: 57vh;
   width: 25%;
 }
 .eighth-section .sec8-part2 {
   padding: 3% !important;
-  height: 78%;
 }
 .eighth-section .sec8-form {
   width: 75%;
@@ -12153,7 +12170,7 @@ body {
 }
 
 .ninth-section {
-  height: 75vh;
+  height: fit-content;
   background: rgba(199, 199, 190, 0.202);
 }
 
@@ -12215,7 +12232,7 @@ body {
 }
 .sec4-bg-img .stats {
   position: relative;
-  z-index: 999;
+  z-index: 1;
   color: #fff !important;
 }
 .sec4-bg-img .stats::before {
@@ -12224,13 +12241,13 @@ body {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
-  z-index: -1;
+  z-index: -999 !important;
 }
 
 @media (max-width: 430px) {
   .navigation {
     position: fixed !important;
-    top: 13vh !important;
+    top: 9% !important;
     right: -110vw !important;
     width: 100vw !important;
     height: 100vh !important;
@@ -12240,9 +12257,13 @@ body {
     transition: ease-in 0.4s !important;
     z-index: 999;
     background: #fff;
+    padding-left: 10%;
+    justify-content: space-between;
+    gap: 10vh;
+    align-items: center;
   }
   .show-nav {
-    right: -50vw !important;
+    right: -10vw !important;
   }
   .nav-btn {
     width: 100%;
@@ -12259,6 +12280,7 @@ body {
     padding: 5%;
     align-items: center;
     justify-content: center;
+    padding-bottom: 20%;
   }
   .first-section-part1 {
     width: 100vw !important;
@@ -12270,13 +12292,14 @@ body {
     align-items: center !important;
     justify-content: center !important;
   }
-  .first-section-part1 .first-section-btns {
+  .first-section-btns {
     display: flex !important;
     flex-direction: row;
-    width: 100vw !important;
+    top: 115% !important;
+    left: 15%;
   }
-  .first-section-part1 .first-section-btns button {
-    width: 30%;
+  .first-section-btns button {
+    width: 40vw !important;
   }
   .first-section-part2 {
     display: flex;
@@ -12363,6 +12386,90 @@ body {
   }
   .sec4-bg-img .stats h1, .sec4-bg-img .stats .h1 {
     font-size: 150% !important;
+  }
+  .menu-box {
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+  }
+  .sec4-menu-pics {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    padding: 22vh;
+  }
+  .review-pic1 {
+    height: 20vh;
+  }
+  .fifth-section {
+    padding: 10%;
+    width: fit-content;
+  }
+  .fifth-section .sec5-part1 {
+    width: 100% !important;
+  }
+  .fifth-section .sec5-part1 .vertical-line {
+    width: 100% !important;
+  }
+  .fifth-section p {
+    width: 110% !important;
+  }
+  .eighth-section .sec8-img {
+    width: 100%;
+    height: 69vh;
+  }
+  .eighth-section .sec8-form {
+    width: 100%;
+  }
+  .eighth-section .sec8-form form {
+    width: 100%;
+  }
+  .eighth-section .sec8-form form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .eighth-section .sec8-form form .col {
+    display: flex;
+    flex-direction: column;
+    width: 90% !important;
+  }
+  .eighth-section .sec8-form form .form-msg input {
+    padding-bottom: 20vh;
+  }
+  .eighth-section .sec8-form form button {
+    width: 50% !important;
+  }
+  .section10 {
+    height: fit-content;
+  }
+  .section10 .sec10-card {
+    width: 90vw !important;
+  }
+  .section10 .sec10-card .sec10-icon {
+    margin-top: 5% !important;
+    background: #000;
+  }
+  .section10 iframe {
+    width: 90vw !important;
+    height: 50vh !important;
+    padding-bottom: 5%;
+  }
+  .section10 .sec10-form {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+  .section10 .sec10-form .contact-us-Form {
+    width: 90%;
+  }
+  .section10 .sec10-form .contact-us-Form form div input {
+    width: 100%;
+  }
+  .section10 .sec10-form .contact-us-Form button {
+    width: 50% !important;
   }
 }
 
